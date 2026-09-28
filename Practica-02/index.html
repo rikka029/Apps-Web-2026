@@ -2,63 +2,131 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diagnóstico de nivel de inglés</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Diagnóstico de inglés | SHIFT</title>
+
+    <!-- Tipografías de la guía visual de SHIFT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+
+    <style>
+        body {
+            background-color: #DAE0F2;
+            color: #111344;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        h1, h2, h3, .brand-name {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .navbar, .card {
+            background-color: #EFE9E7;
+        }
+
+        .brand-name {
+            color: #111344;
+        }
+
+        .accent-color {
+            color: #52154E;
+        }
+
+        .question-option {
+            background-color: #fff;
+            border: 1px solid #DAE0F2;
+            border-radius: 0.75rem;
+            margin-bottom: 0.5rem;
+            padding: 0.75rem 1rem;
+        }
+
+        .level-badge {
+            background-color: #EDD0EC;
+            color: #111344;
+        }
+
+        .result-box {
+            background-color: #fff;
+            border-left: 5px solid #52154E;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>English Path</h1>
-        <p>Diagnóstico inicial de inglés</p>
+        <nav class="navbar navbar-expand-lg shadow-sm">
+            <div class="container py-2">
+                <a class="navbar-brand brand-name fs-2" href="#inicio">SHIFT<span class="accent-color">✦</span></a>
+                <span class="d-none d-sm-inline text-muted">Aprende inglés. Cambia tu mundo.</span>
+            </div>
+        </nav>
     </header>
 
-    <main>
-        <section>
-            <h2>Descubre tu nivel de inglés</h2>
-            <p>
-                Contesta estas preguntas para conocer tu nivel de inglés.
-                Lee cada pregunta y elige la respuesta que consideres correcta.
-            </p>
-        </section>
+    <main class="container py-4 py-md-5" id="inicio">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+                <section class="card border-0 shadow-sm mb-4">
+                    <div class="card-body p-4 p-md-5">
+                        <span class="badge rounded-pill level-badge px-3 py-2 mb-3">Diagnóstico inicial</span>
+                        <h1 class="display-6 fw-bold">Descubre tu nivel de inglés</h1>
+                        <p class="mb-3">
+                            Responde estas preguntas para conocer tu nivel inicial y comenzar
+                            a aprender a tu propio ritmo.
+                        </p>
+                        <p class="mb-0"><strong>Instrucciones:</strong> Lee cada pregunta y revisa las opciones.</p>
+                    </div>
+                </section>
 
-        <section>
-            <h2>Pregunta 1</h2>
-            <p>¿Cuál de estas opciones significa “Buenos días”?</p>
-            <ul>
-                <li>Good morning</li>
-                <li>Good night</li>
-                <li>Good afternoon</li>
-            </ul>
-        </section>
+                <section class="card border-0 shadow-sm mb-3">
+                    <div class="card-body p-4">
+                        <h2 class="h4 mb-3">1. ¿Cuál de estas opciones significa “Buenos días”?</h2>
+                        <ul class="list-unstyled mb-0">
+                            <li class="question-option">Good morning</li>
+                            <li class="question-option">Good night</li>
+                            <li class="question-option mb-0">Good afternoon</li>
+                        </ul>
+                    </div>
+                </section>
 
-        <section>
-            <h2>Pregunta 2</h2>
-            <p>Completa la oración: “She ___ a student.”</p>
-            <ul>
-                <li>are</li>
-                <li>is</li>
-                <li>am</li>
-            </ul>
-        </section>
+                <section class="card border-0 shadow-sm mb-3">
+                    <div class="card-body p-4">
+                        <h2 class="h4 mb-3">2. Completa la oración: “She ___ a student.”</h2>
+                        <ul class="list-unstyled mb-0">
+                            <li class="question-option">are</li>
+                            <li class="question-option">is</li>
+                            <li class="question-option mb-0">am</li>
+                        </ul>
+                    </div>
+                </section>
 
-        <section>
-            <h2>Pregunta 3</h2>
-            <p>¿Cuál es el pasado del verbo “go”?</p>
-            <ul>
-                <li>goed</li>
-                <li>went</li>
-                <li>goes</li>
-            </ul>
-        </section>
+                <section class="card border-0 shadow-sm mb-4">
+                    <div class="card-body p-4">
+                        <h2 class="h4 mb-3">3. ¿Cuál es el pasado del verbo “go”?</h2>
+                        <ul class="list-unstyled mb-0">
+                            <li class="question-option">goed</li>
+                            <li class="question-option">went</li>
+                            <li class="question-option mb-0">goes</li>
+                        </ul>
+                    </div>
+                </section>
 
-        <section>
-            <h2>Resultado</h2>
-            <p>Al terminar el diagnóstico, aquí se mostrará el nivel de inglés.</p>
-            <p><strong>Nivel de ejemplo: A1 - Principiante</strong></p>
-        </section>
+                <section class="result-box rounded shadow-sm p-4" aria-labelledby="resultado">
+                    <h2 class="h4" id="resultado">Tu resultado</h2>
+                    <p class="mb-2">El nivel obtenido se mostrará en esta sección.</p>
+                    <span class="badge rounded-pill level-badge px-3 py-2">Pendiente</span>
+                </section>
+            </div>
+        </div>
     </main>
 
-    <footer>
-        <p>Práctica de HTML - Diagnóstico de nivel</p>
+    <footer class="container text-center py-4">
+        <small>SHIFT · Diagnóstico de nivel de inglés</small>
     </footer>
 </body>
 </html>
