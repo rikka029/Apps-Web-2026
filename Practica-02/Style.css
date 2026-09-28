@@ -1,0 +1,56 @@
+/* Colores principales de la identidad visual SHIFT */
+:root {
+    --color-primario: #111344;
+    --color-secundario: #52154E;
+    --color-fondo: #DAE0F2;
+    --color-superficie: #EFE9E7;
+    --color-acento: #EDD0EC;
+}
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-primario);
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3,
+.brand-name {
+    font-family: 'Playfair Display', serif;
+}
+
+.navbar,
+.card {
+    background-color: var(--color-superficie);
+}
+
+.brand-name {
+    color: var(--color-primario);
+}
+
+.accent-color {
+    color: var(--color-secundario);
+}
+
+.question-option {
+    background-color: #ffffff;
+    border: 1px solid var(--color-fondo);
+    border-radius: 0.75rem;
+    margin-bottom: 0.5rem;
+    padding: 0.75rem 1rem;
+}
+
+.level-badge {
+    background-color: var(--color-acento);
+    color: var(--color-primario);
+}
+
+.result-box {
+    background-color: #ffffff;
+    border-left: 5px solid var(--color-secundario);
+}
+
+footer {
+    color: var(--color-primario);
+}
